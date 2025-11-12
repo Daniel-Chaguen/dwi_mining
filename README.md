@@ -4,6 +4,9 @@ This repository contains the code and resources developed for a data mining proj
 # Description
 Agregar descripción del proyecto
 
+# How to run
+Explicar funcionamiento de los scripts y cómo correrlos
+
 # Reference
 Agregar referencia a la base de datos.
 
