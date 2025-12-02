@@ -137,12 +137,10 @@ AdaptiveAvgPool3D(1) → Flatten → Linear(128) → Dropout(0.2) → Linear(2)
 
 ## 📈 Results
 
-### Model Performance Comparison Train
+### Confusion Matrix - SVM 
 
-| Model | Balanced Accuracy | Precision | Recall | F1-Score |
-|-------|-------------------|-----------|--------|----------|
-| **SVM (RBF)** | **0.68** | 0.71 | 0.64 | 0.67 |
-| **3D CNN** | **0.70** | 0.73 | 0.68 | 0.70 |
+
+![Confusion Matrix](./images/svm-test.png)
 
 ### Confusion Matrix - Best Model (3D CNN)
 
