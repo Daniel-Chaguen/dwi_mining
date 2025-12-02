@@ -27,7 +27,7 @@ This project implements an **end-to-end machine learning pipeline** applying the
 - ✅ Processed and normalized **200+ DWI brain volumes** (96×96×50, 64 diffusion channels)
 - ✅ Engineered **512 Fractional Anisotropy (FA) block features** from DTI tensor models
 - ✅ Implemented custom **3D Convolutional Neural Network** achieving ~70% balanced accuracy
-- ✅ Compared classical ML (SVM, XGBoost) vs deep learning approaches
+- ✅ Compared classical ML (SVM) vs deep learning approaches
 - ✅ Visualized model activations and decision boundaries using t-SNE
 
 ---
@@ -103,10 +103,6 @@ We implemented a novel **block-based FA extraction pipeline**:
    - Hyperparameter tuning via GridSearchCV (C, gamma)
    - Best params: `C=10, gamma=0.01, kernel='rbf'`
 
-2. **XGBoost**:
-   - RandomizedSearchCV (50 iterations)
-   - Pipeline: StandardScaler → PCA → XGBoost
-   - Best params: `n_estimators=450, max_depth=5, learning_rate=0.238`
 
 #### Deep Learning Model:
 **Custom 3D CNN Architecture**:
@@ -178,7 +174,7 @@ The network progressively extracts:
 pip install numpy pandas matplotlib seaborn
 pip install torch torchvision
 pip install nibabel dipy
-pip install scikit-learn xgboost plotly
+pip install scikit-learn plotly
 ```
 
 ### Download Dataset
